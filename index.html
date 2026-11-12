@@ -33,11 +33,16 @@ header {
   gap: 12px;
 }
 
-.logo {
-  font-size: 22px;
-  color: #01875f;
-  font-weight: bold;
+
+  .logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
 }
+
 
 .brand { font-size: 20px; }
 
@@ -225,7 +230,15 @@ footer {
 <body>
 
 <header>
-  <div class="logo">▶</div>
+  <div class="logo">
+  <svg width="30" height="30" viewBox="0 0 48 48"
+       xmlns="http://www.w3.org/2000/svg">
+    <path fill="#4285F4" d="M5 3 L27 24 L5 45 Z"/>
+    <path fill="#34A853" d="M5 3 L33 19 L27 24 Z"/>
+    <path fill="#EA4335" d="M27 24 L33 29 L5 45 Z"/>
+    <path fill="#FBBC04" d="M27 24 L33 19 L43 24 L33 29 Z"/>
+  </svg>
+</div>
   <div class="brand">Google Play</div>
   <button class="profile" aria-label="Profile">●</button>
 </header>
